@@ -7,3 +7,11 @@ export function getList(params) {
     params
   })
 }
+
+export function getUsers(params) {
+  return request({
+    url: '/health',
+    method: 'get',
+    params
+  })
+}
