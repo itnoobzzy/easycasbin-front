@@ -16,11 +16,10 @@ export function deleteDomains(params) {
   })
 }
 
-export function addDomains(params) {
+export function addDomains(data) {
   return request({
     url: '/casbin/domain',
-    headers: { "content-type"  : "application/json" },
     method: 'post',
-    data: params
+    data
   })
 }
