@@ -35,7 +35,7 @@ export default {
       this.listLoading = true
       getDomains().then(response => {
         this.domains = response.data
-        this.domains.push("endItem")
+        this.domains.push('endItem')
       })
     },
     handleDelete(domain) {
